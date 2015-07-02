@@ -8,7 +8,7 @@ package Modelo;
  */
 public class Main {
 
-	/** VERSION DE MIERDA
+	/**
 	 * @param args
 	 */
 	public static void main(String[] args){
