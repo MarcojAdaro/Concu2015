@@ -1,5 +1,7 @@
 package Modelo;
 
+import Modelo.politicas.Cola;
+
 /**
  * Implementa un semaforo
  * @author Adaro, Barrera, Vogel

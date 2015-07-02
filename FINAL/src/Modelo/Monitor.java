@@ -3,6 +3,9 @@ package Modelo;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import Modelo.politicas.Cola;
+import Modelo.politicas.cola_fifo;
+
 /**
  * Implementa un monitor
  * @author Adaro, Barrera, Vogel

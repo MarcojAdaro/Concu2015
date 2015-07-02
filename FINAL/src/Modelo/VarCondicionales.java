@@ -1,5 +1,7 @@
 package Modelo;
 
+import Modelo.politicas.cola_fifo;
+
 /**
  * Implementa una variables condicional
  * @author Adaro, Barrera, Vogel

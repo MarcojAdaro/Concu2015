@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Modelo;
+package Modelo.politicas;
 
 /**
  * @author Adaro, Barreda, Vogel

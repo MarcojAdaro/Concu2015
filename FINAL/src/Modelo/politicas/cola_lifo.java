@@ -1,65 +1,68 @@
-package Modelo;
+package Modelo.politicas;
 
 import java.util.ArrayList;
 
 /**
- * Implementa una cola FIFO
+ * Implementa una cola LIFO
  * @author Adaro, Barrera, Vogel
+ *
  */
-
-public class cola_fifo implements Cola{
+public class cola_lifo implements Cola{
 	
 	private ArrayList<Thread> cola;
 	
 	/**
 	 * Inicializa la cola
 	 */
-	public cola_fifo(){
+	public cola_lifo(){
 		
 		cola = new ArrayList<Thread>();
+		
 	}
 	
 	/**
-	 * Agrega un elemento a la cola en el ultimo lugar
+	 * Agrega el elemento c a la cola
 	 * @param c Elemento a agregar
 	 */
 	public void set(Thread c){
-		cola.add(c);
+		
+		this.cola.add(c);
+		
 	}
 	
 	/**
-	 * Devuleve el primer elemento de la cola y lo elimina
-	 * @return El elemento de la primera posicion
+	 * Retorna el ultimo elemento de la cola y lo elimina sino devuelve null
+	 * @return c Ultimo elemento de la cola
 	 */
 	public Thread get(){
+		
+		int size = cola.size();
 		
 		Thread c = null;
 		
 		try{
 			
-			c = cola.get(0);
+			c = this.cola.get(size -1);
 			
 		}catch(IndexOutOfBoundsException e){
-			
 			System.out.print("Se trato de extraer elemento fuera de rango!!");
-			
 		}
 		
-		cola.remove(0);
+		this.cola.remove(0);
 		
 		return c;
 		
 	}
 	
 	/**
-	 * Devuelvo el primer elemneto de la cola
-	 * @return El elemento de la primera posicion
+	 * Retorna el ultimo elemento de la cola
+	 * @return c Ultimo elemento de la cola
 	 */
 	public Thread view(){
 		
 		Thread c = null;
 		try {
-			c = cola.get(0);
+			c = this.cola.get(0);
 		} catch (IndexOutOfBoundsException e) {
 			
 			System.out.print("Se trato de extraer elemento fuera de rango!!");
@@ -73,9 +76,11 @@ public class cola_fifo implements Cola{
 	 * Devuelve true si la cola esta vacia, false si contiene elementos
 	 * @return boolean Estado de la cola
 	 */
+	
+	
 	public boolean empty(){
 		
-		int size = cola.size();
+		int size = this.cola.size();
 		
 		if(size == 0){
 			return true;
