@@ -1,17 +1,14 @@
 package Modelo;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 /**
  * Clase principal del programa
- * @author Adaro, Barreda, Vogel
+ * @author Adaro, Barreda, Vogelghj
  *
  */
 public class Main {
 
 	/**
-	 * 
 	 * @param args
 	 */
 	public static void main(String[] args){
