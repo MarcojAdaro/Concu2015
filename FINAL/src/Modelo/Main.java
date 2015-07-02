@@ -3,12 +3,12 @@ package Modelo;
 
 /**
  * Clase principal del programa
- * @author Adaro, Barreda, Vogelghj
+ * @author Adaro, Barreda, Vogel
  *
  */
 public class Main {
 
-	/**
+	/** VERSION DE MIERDA
 	 * @param args
 	 */
 	public static void main(String[] args){
