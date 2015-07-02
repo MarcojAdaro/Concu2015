@@ -13,11 +13,8 @@ public class Main {
 	/**
 	 * 
 	 * @param args
-	 * @throws FileNotFoundException
-	 * @throws NullPointerException
-	 * @throws IOException
 	 */
-	public static void main(String[] args) throws FileNotFoundException, NullPointerException, IOException {
+	public static void main(String[] args){
 		
 		Monitor m = new Monitor();
 		/*
